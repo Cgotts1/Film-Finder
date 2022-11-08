@@ -9,6 +9,7 @@ const moviePoster = document.querySelector(".movie-poster");
 function storeData(event) {
   console.log(event);
   localStorage.setItem("selectedMovie", event.target.alt);
+  localStorage.setItem('selectedPoster', event.target.currentSrc);
   location.assign("./results.html");
 }
 
@@ -27,11 +28,11 @@ function getMovieData(event) {
     .then(function (result) {
       console.log(result);
 
-      for (i = 0; i < 4; i++) {
+      for (i = 0; i < 5; i++) {
         let newDiv = document.createElement("div");
         newDiv.classList = i === 0 ? "carousel-item active" : "carousel-item";
         let newImg = document.createElement("img");
-        newImg.classList = "d-block w-100";
+        newImg.classList = "d-block w-100 ";
         newImg.alt = `${result.results[i].title}`;
         newImg.src =
           "https://image.tmdb.org/t/p/w500" + result.results[i].poster_path;
