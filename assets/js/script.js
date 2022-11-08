@@ -6,15 +6,10 @@ const searchButton = document.querySelector(".search-button");
 const searchInput = document.querySelector(".search-input");
 const moviePoster = document.querySelector(".movie-poster");
 
-function displayResults(event) {
-  event.preventDefault();
-  console.log(event);
-  location.assign("./results.html");
-}
-
 function storeData(event) {
   console.log(event);
-  localStorage.setItem("selectedMovie", JSON.stringify(event.target.title));
+  localStorage.setItem("selectedMovie", event.target.alt);
+  location.assign("./results.html");
 }
 
 function getMovieData(event) {
@@ -37,6 +32,7 @@ function getMovieData(event) {
         newDiv.classList = i === 0 ? "carousel-item active" : "carousel-item";
         let newImg = document.createElement("img");
         newImg.classList = "d-block w-100";
+        newImg.alt = `${result.results[i].title}`;
         newImg.src =
           "https://image.tmdb.org/t/p/w500" + result.results[i].poster_path;
         selectMovieButton.appendChild(newDiv);
@@ -47,5 +43,4 @@ function getMovieData(event) {
 }
 
 searchButton.addEventListener("click", getMovieData);
-selectMovieButton.addEventListener("click", displayResults);
 selectMovieButton.addEventListener("click", storeData);
