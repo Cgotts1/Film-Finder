@@ -29,3 +29,119 @@ var requestOptions = {
 
 searchButton.addEventListener("click", getMovieData)
 selectMovieButton.addEventListener("click", displayResults)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   API code
+ 
+ 
+// &(".carousel-inner select-movie").submit(function(event){
+//     event.preventDefault()
+ 
+//     var movie = $('.carousel-inner select-movie').val()
+//     var secondUrl = "http://www.omdbapi.com/?apikey=" + secondApiKey
+ 
+//     $.ajax({
+//         method:'GET',
+//         url:url+"&t=" + movie,
+ 
+//         success:function(data){
+//             console.log(data)
+//         }
+//     })
+// });
+ 
+ 
+ 
+// var secondApiKey = 90097123
+// var secondUrl = "http://www.omdbapi.com/?apikey=" + secondApiKey
