@@ -6,7 +6,7 @@ var requestOptionsTwo = {
     redirect: 'follow'
   };
 var movieTitle = localStorage.getItem("selectedMovie")
-  fetch(`http://www.omdbapi.com/?t=${movieTitle}&apikey=90097123`, requestOptionsTwo)
+  fetch(`https://www.omdbapi.com/?t=${movieTitle}&apikey=90097123`, requestOptionsTwo)
     .then(response => response.json())
     .then(function (result) {
         let movieImage = document.createElement("img");
