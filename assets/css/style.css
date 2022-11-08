@@ -1,4 +1,12 @@
-img{
-    height:700px;
-    width:300px;
+.container{
+    background: linear-gradient(rgb(87, 101, 203), 50%, black);
+    border-radius: 20px;
+    border: solid white 2px;
+    color: rgb(194, 206, 243);
+    
+}
+
+body{
+    background-color: black;
+    font-family: 'Vidaloka', serif;
 }
