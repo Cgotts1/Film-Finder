@@ -39,7 +39,6 @@ function getMovieData(event) {
         newDiv.appendChild(newImg);
       }
     })
-
     .catch((error) => console.log("error", error));
 }
 
