@@ -32,7 +32,7 @@ function getMovieData(event) {
         let newDiv = document.createElement("div");
         newDiv.classList = i === 0 ? "carousel-item active" : "carousel-item";
         let newImg = document.createElement("img");
-        newImg.classList = "d-block w-25 mx-auto";
+        newImg.classList = "d-block mw-100 mx-auto";
         newImg.alt = `${result.results[i].title}`;
         newImg.src =
           "https://image.tmdb.org/t/p/w500" + result.results[i].poster_path;
