@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url("/Users/ryantaylor/Desktop/Code/API-Project/images/movie.jpeg");
+    background-image: url("/assets/images/movie.jpeg");
     background-repeat: no-repeat;
    background-size: auto;
    background-position-x: center;
