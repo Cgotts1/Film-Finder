@@ -7,6 +7,10 @@
 }
 
 body{
+    background-image: url("/Users/ryantaylor/Desktop/Code/API-Project/images/josh-eckstein-lbRzSxHS2kU-unsplash.jpg");
+    background-repeat: no-repeat;
+   background-size: auto;
+   background-position-x: center;
     background-color: black;
     font-family: 'Vidaloka', serif;
 }
