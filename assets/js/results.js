@@ -25,9 +25,9 @@ var movieTitle = localStorage.getItem("selectedMovie")
                             <li>Plot Summary: ${result.Plot !== undefined ? result.Plot : "Plot information unavailable"}
                             <p>
                             <p>Ratings:
-                            <li>${result.Ratings === undefined ? "IMDB rating unavailable": result.Ratings[0].Source} ${result.Ratings === undefined ? "" : result.Ratings[0].Value}
-                            <li>${result.Ratings === undefined ? "Rotten Tomatoes rating unavailable" : result.Ratings[1].Source} ${result.Ratings === undefined ? "" : result.Ratings[1].Value}
-                            <li>${result.Ratings === undefined ? "Metacritic rating unavailable" : result.Ratings[2].Source} ${result.Ratings === undefined ? "" : result.Ratings[2].Value}
+                            <li>${result.Ratings && result.Ratings[0] ? result.Ratings[0].Source : "IMDB rating unavailable"} ${result.Ratings && result.Ratings[0] ? result.Ratings[0].Value : ""}
+                            <li>${result.Ratings && result.Ratings[1] ?  result.Ratings[1].Source : "Rotten Tomatoes rating unavailable"} ${result.Ratings && result.Ratings[1] ? result.Ratings[1].Value : "" }
+                            <li>${result.Ratings && result.Ratings[2] ? result.Ratings[2].Source : "Metacritic rating unavailable"} ${result.Ratings && result.Ratings[2] ? result.Ratings[2].Value : ""}
                             <ul>`
         
         omdbInfo.innerHTML = movieListEl               
