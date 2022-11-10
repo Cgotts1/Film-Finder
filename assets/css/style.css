@@ -1,18 +1,51 @@
-.container{
-    background: linear-gradient(red, 30%, black);
-    border-radius: 20px;
-    border: solid white 2px;
-    color: rgb(194, 206, 243);
-    
+.container {
+  background: linear-gradient(red, 30%, black);
+  border-radius: 20px;
+  border: solid white 2px;
+  color: rgb(194, 206, 243);
 }
 
-body{
-    background-image: url("/assets/images/movie.jpeg");
-    background-repeat: no-repeat;
-   background-size: auto;
-   background-position-x: center;
-    background-color: black;
-    font-family: 'Vidaloka', serif;
+.search-input{
+    background-color: #1c1919;
+    border: solid 1px white;
+    border-radius: 10px;
+    color:white;
+    text-align:center;
+    font-family: 'Creepster', cursive;
+    font-size: 20px;
+}
+
+.search-button{
+    font-family: 'Creepster', cursive;
+}
+
+
+.search-button:hover{
+border:solid 1px white;
+background-color:rgb(36, 34, 34);
+
+
+}
+
+h1 {
+    font-family: 'Creepster', cursive;
+}
+body {
+  background-image: url("../images/movie.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-color: black;
+  font-family: "Vidaloka", serif;
+}
+
+@media (max-width: 575.98px) {
+  .images {
+    width: 65%;
+  }
+  body {
+    background-size: auto;
+  }
 }
 
 .search-input{
