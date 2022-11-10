@@ -14,3 +14,29 @@ body{
     background-color: black;
     font-family: 'Vidaloka', serif;
 }
+
+.search-input{
+    background-color: #1c1919;
+    border: solid 1px white;
+    border-radius: 10px;
+    color:white;
+    text-align:center;
+    font-family: 'Creepster', cursive;
+    font-size: 20px;
+}
+
+.search-button{
+    font-family: 'Creepster', cursive;
+}
+
+
+.search-button:hover{
+border:solid 1px white;
+background-color:rgb(36, 34, 34);
+
+
+}
+
+h1 {
+    font-family: 'Creepster', cursive;
+}
