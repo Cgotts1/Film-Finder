@@ -13,7 +13,13 @@ var movieTitle = localStorage.getItem("selectedMovie")
         movieImage.src = localStorage.getItem("selectedPoster")
         movieImage.classList = "w-100 h-100 rounded-5 py-3"
         moviePosterResults.append(movieImage)
-        console.log(result)
+        console.log("test", result)
+        if(result.Error === 'Movie not found!'){
+            var errorEl = `<img class = "d-block mx-auto rounded-5 w-100" src = "./assets/images/JT.gif">
+                            <p class = "text-center gif">Sorry no information available`
+            omdbInfo.innerHTML = errorEl
+            return 
+        } else {
         let movieListEl = `<ul class = "fs-3">
                             <li>Actors: ${result.Actors !== undefined ? result.Actors : "Actors information unavailable"}
                             <li>Director: ${result.Director !== undefined ? result.Director : "Directors information unavailable"}
@@ -29,8 +35,7 @@ var movieTitle = localStorage.getItem("selectedMovie")
                             <li>${result.Ratings && result.Ratings[1] ?  result.Ratings[1].Source : "Rotten Tomatoes rating unavailable"} ${result.Ratings && result.Ratings[1] ? result.Ratings[1].Value : "" }
                             <li>${result.Ratings && result.Ratings[2] ? result.Ratings[2].Source : "Metacritic rating unavailable"} ${result.Ratings && result.Ratings[2] ? result.Ratings[2].Value : ""}
                             <ul>`
-        
-        omdbInfo.innerHTML = movieListEl               
-        console.log(result)})
+        omdbInfo.innerHTML = movieListEl}               
+        })
     .catch(error => console.log('error', error));
         

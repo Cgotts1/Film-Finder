@@ -46,6 +46,10 @@ body {
     cursor: pointer;
 }
 
+.gif{
+ font-size: 100px;
+}
+
 .backBtn {
   position:absolute;
   bottom: 25px;;
