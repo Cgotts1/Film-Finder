@@ -43,5 +43,10 @@ function getMovieData(event) {
     .catch((error) => console.log("error", error));
 }
 
+window.addEventListener('load', () => {
+    localStorage.clear()
+  });
+
 searchButton.addEventListener("click", getMovieData);
 selectMovieButton.addEventListener("click", storeData);
+
