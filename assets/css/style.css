@@ -37,6 +37,10 @@ body {
   font-family: "Vidaloka", serif;
 }
 
+.images:hover{
+    box-shadow: inset 5em 1em gold;
+}
+
 @media (max-width: 575.98px) {
   .images {
     width: 65%;
