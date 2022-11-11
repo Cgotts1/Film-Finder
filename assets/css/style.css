@@ -2,7 +2,7 @@
   background: linear-gradient(red, 30%, black);
   border-radius: 20px;
   border: solid white 2px;
-  color: rgb(194, 206, 243);
+  color: white;
 }
 
 .search-input{
@@ -37,8 +37,14 @@ body {
   font-family: "Vidaloka", serif;
 }
 
+
 .images:hover{
-    box-shadow: inset 5em 1em gold;
+    background-color: #fff;
+    box-shadow: inset 5px 0 0 0 #54b3d6;
+    -webkit-filter: brightness(125%); 
+    border:rgb(248, 235, 235) solid 5px;
+    transition:800ms;
+    cursor: pointer;
 }
 
 @media (max-width: 575.98px) {
