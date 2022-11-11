@@ -16,7 +16,7 @@ var movieTitle = localStorage.getItem("selectedMovie")
         console.log("test", result)
         if(result.Error === 'Movie not found!'){
             var errorEl = `<img class = "d-block mx-auto rounded-5 w-100" src = "./assets/images/JT.gif">
-                            <p class = "text-center gif">Sorry no information available`
+                            <p class = "text-center gif text-wrap">Sorry no information available`
             omdbInfo.innerHTML = errorEl
             return 
         } else {
