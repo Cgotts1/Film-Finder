@@ -55,26 +55,20 @@ body {
   bottom: 25px;;
   font-weight: 600; 
   background:rgb(36, 34, 34);
-  animation: color 2s infinite linear;
+  animation:  fade 2s infinite linear;
   border-radius: 20px;
   max-width: 80px;
-  margin-right: -50%;
   opacity: 0.6;
-  transition: 0.3s;
-  margin-left: 45%;
+  color: white;
 }
 
 .backBtn:hover {
   opacity: 1;
 }
 
-@keyframes color {
-  0%   { background: #ee401d; }
-  20%  { background: #cc6633; }
-  40%  { background: #cc8a33; }
-  60%  { background: #fc8200; }
-  80%  { background: #cc334a; }
-  100% { background: #cc3333; }
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
 }
 
 @media (max-width: 575.98px) {
@@ -83,5 +77,8 @@ body {
   }
   body {
     background-size: auto;
+  }
+  .gif {
+    font-size: 60px;
   }
 }
