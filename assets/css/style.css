@@ -37,7 +37,6 @@ body {
   font-family: "Vidaloka", serif;
 }
 
-
 .images:hover{
     background-color: #fff;
     box-shadow: inset 5px 0 0 0 #54b3d6;
@@ -45,6 +44,33 @@ body {
     border:rgb(248, 235, 235) solid 5px;
     transition:800ms;
     cursor: pointer;
+}
+
+.backBtn {
+  position:absolute;
+  bottom: 25px;;
+  font-weight: 600; 
+  background:rgb(36, 34, 34);
+  animation: color 2s infinite linear;
+  border-radius: 20px;
+  max-width: 80px;
+  margin-right: -50%;
+  opacity: 0.6;
+  transition: 0.3s;
+  margin-left: 45%;
+}
+
+.backBtn:hover {
+  opacity: 1;
+}
+
+@keyframes color {
+  0%   { background: #ee401d; }
+  20%  { background: #cc6633; }
+  40%  { background: #cc8a33; }
+  60%  { background: #fc8200; }
+  80%  { background: #cc334a; }
+  100% { background: #cc3333; }
 }
 
 @media (max-width: 575.98px) {
