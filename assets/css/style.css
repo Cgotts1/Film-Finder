@@ -9,6 +9,10 @@
   display: none;
 }
 
+.images{
+  width: 25%;
+}
+
 .search-input{
     background-color: #1c1919;
     border: solid 1px white;
@@ -22,7 +26,6 @@
 .search-button{
     font-family: 'Creepster', cursive;
 }
-
 
 .search-button:hover{
 border:solid 1px white;
