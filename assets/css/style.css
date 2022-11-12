@@ -5,6 +5,10 @@
   color: white;
 }
 
+.hide {
+  display: none;
+}
+
 .search-input{
     background-color: #1c1919;
     border: solid 1px white;
@@ -47,7 +51,7 @@ body {
 }
 
 .gif{
- font-size: 100px;
+ font-size: 75px;
 }
 
 .backBtn {
