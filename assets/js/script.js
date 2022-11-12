@@ -5,6 +5,7 @@ const selectMovieButton = document.querySelector(".select-movie");
 const searchButton = document.querySelector(".search-button");
 const searchInput = document.querySelector(".search-input");
 const moviePoster = document.querySelector(".movie-poster");
+const carouselEl = document.querySelector(".carousel")
 
 function storeData(event) {
   console.log(event);
@@ -15,6 +16,7 @@ function storeData(event) {
 
 function getMovieData(event) {
   event.preventDefault();
+  carouselEl.classList.remove("hide")
   let search = searchInput.value;
   var requestOptions = {
     method: "GET",
@@ -23,10 +25,9 @@ function getMovieData(event) {
   fetch(
     `https://api.themoviedb.org/3/search/movie?api_key=91b89138e6c4e9412f5ce87e1e9d3520&language=en-US&query=${search}&page=1&include_adult=false`,
     requestOptions
-  )
+    )
     .then((response) => response.json())
     .then(function (result) {
-      console.log(result);
 
       for (i = 0; i < 5; i++) {
         let newDiv = document.createElement("div");
