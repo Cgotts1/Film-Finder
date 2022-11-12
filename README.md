@@ -7,12 +7,12 @@ Project 1
     * Kenji Bribon
     * Reda Zemzoumi
 ## Title and Deployed Application Link
-[Movie Search](https://cgotts1.github.io/API-Project/)
+[Film Finder](https://cgotts1.github.io/API-Project/)
 
 ## Description
 Movie database page that would give the user the plot, ratings, genre, etc.
 ## Screenshot
-![Movie Search Gif](/assets/images/Project.gif)
+![Film Finder gif](/assets/images/Project.gif)
 
 ## Project Requirements
     * You and your group will use everything you’ve learned over the past six modules to create a real-world front-end application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
