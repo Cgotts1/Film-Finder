@@ -7,6 +7,7 @@ const searchInput = document.querySelector(".search-input");
 const moviePoster = document.querySelector(".movie-poster");
 const carouselEl = document.querySelector(".carousel")
 
+//when movie button is clicked, the information is stored to local storage
 function storeData(event) {
   console.log(event);
   localStorage.setItem("selectedMovie", event.target.alt);
@@ -14,6 +15,7 @@ function storeData(event) {
   location.assign("./results.html");
 }
 
+//when search button is clicked, the carousel is unhidden and displays 5 movies based on the search input
 function getMovieData(event) {
   event.preventDefault();
   carouselEl.classList.remove("hide")
@@ -44,10 +46,12 @@ function getMovieData(event) {
     .catch((error) => console.log("error", error));
 }
 
+//when page is loaded the last search result that was saved to local storage is closed
 window.addEventListener('load', () => {
     localStorage.clear()
   });
 
+//event listeners for the search and movie button to trigger functions
 searchButton.addEventListener("click", getMovieData);
 selectMovieButton.addEventListener("click", storeData);
 
