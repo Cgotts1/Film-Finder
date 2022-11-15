@@ -1,6 +1,8 @@
 const moviePosterResults = document.querySelector('.movie-poster-results')
 const omdbInfo = document.querySelector('.omdb-info')
 
+
+//takes the movie title from local storage to get information for the movie
 var requestOptionsTwo = {
     method: 'GET',
     redirect: 'follow'
@@ -13,12 +15,15 @@ var movieTitle = localStorage.getItem("selectedMovie")
         movieImage.src = localStorage.getItem("selectedPoster")
         movieImage.classList = "w-100 h-100 rounded-5 py-3"
         moviePosterResults.append(movieImage)
-        console.log("test", result)
+        
+        //checks to see if movie is not found, if not found it displayed a message and a gif
         if(result.Error === 'Movie not found!'){
             var errorEl = `<img class = "d-block mx-auto rounded-5 w-100" src = "./assets/images/JT.gif">
                             <p class = "text-center gif text-wrap">Sorry no information available`
             omdbInfo.innerHTML = errorEl
             return 
+        
+        //if information is found then it is pulled from the api and displayed. if certain categories are missing, an unavailable message will show  
         } else {
         let movieListEl = `<ul class = "fs-3">
                             <li>Actors: ${result.Actors !== undefined ? result.Actors : "Actors information unavailable"}
