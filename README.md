@@ -1,58 +1,37 @@
-# API-Project
-Project 1
+# Film-Finder
 
-## Members
-    * Ryan Taylor
-    * Cobi Gottschalk
-    * Kenji Bribon
-    * Reda Zemzoumi
-## Title and Deployed Application Link
-[Film Finder](https://cgotts1.github.io/API-Project/)
+## <section id = "License">License</section>
+N/A
 
-## Description
-Movie database page that would give the user the plot, ratings, genre, etc.
-## Screenshot
-![Film Finder gif](/assets/images/Project.gif)
+## <section id = "Description">Description</section>
+This web application allows users to search for movie information and movie posters using the Open Movie Database (OMDB) and The Movie Database (TMDB) APIs. Simply type in the name of a movie in the search bar and the application will display movie information such as its title, release year, plot summary, rating, and poster image. This application is made using HTML, CSS, and Javascript. It also uses local storage for persistent data, so your recent movie searches will be saved and can be easily accessed in the future.
 
-## Project Requirements
-    * You and your group will use everything you’ve learned over the past six modules to create a real-world front-end application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
-    * Be deployed to GitHub Pages.
-    * Be interactive (i.e., accept and respond to user input).
-    * Use at least two server-side APIs.
-    * Does not use alerts, confirms, or prompts (use modals).
-    * Use client-side storage to store persistent data.
-    * Be responsive.
-    * Have a polished UI.
-    * Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
-    * Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
-## User Story
-    * As a movie watcher I want to see movie information guide
-    * As a user I want to search for the movie in a search box
-    * Once I select a movie, it will display the movie information I need (i.e. genre, plot, movie ratings)
-## Acceptance Criteria
-    * Typing a keyword or the complete name of the movie in the search box will display the results
-    * When I select a movie from the database, it will display the movie information
-    * At least two server-side APIs will need to be used in deploying the application
-    * Application uses client-side storage to store persistent data
-    * Make a pull request, merging branches, and ask for a peer review on Github
-    * Application responds to user input
+Link to application: https://cgotts1.github.io/Film-Finder/ 
+![Film Finder gif](/assets/images/Project.gif) <br>
+![Film Finder Image](/assets/images/projectImage.png) <br>
 
-## Satisfied Criteria and Submission Requirement
-    * Application UI allows users to search for the movie they want, and gives the information of the selected movie
-    * Application uses client-side storage to store persistent data
-    * Application doesn’t use JS alerts, prompts, or confirms (uses modals instead)
-    * Application is interactive (accepts and responds to user input)
-    * Utilized "Prettier" extension to meet quality coding standards
-    * Pulled requests, merging branches, and requesting for peer review in Github
-    * Each member of your group is required to submit the following for review:
-        * The URL of the deployed application
-        * The URL of the GitHub repository, with a unique name and a README describing the project
-    * Application uses at least two [server-side APIs]
+## Table of Contents
+1.) <a href = "#License">License</a><br>
+2.) <a href = "#Description">Description</a><br>
+3.) <a href = "#Installation">Installation</a> <br>
+4.) <a href = "#Usage">Usage</a><br>
+5.) <a href = "#Contributing">Contributing</a><br>
+6.) <a href = "#Tests">Tests</a><br>
+7.) <a href = "#Questions">Questions</a>
 
-## APIs
-[OMDB API](https://www.omdbapi.com/)
+## <section id = "Installation">Installation</section>
+Command to Install Dependencies: N/A
 
-[TMDB API](https://www.themoviedb.org/)
+## <section id = "Usage">Usage</section>
+Using the Repo: N/A 
 
-## Repository
-<https://github.com/Cgotts1/API-Project>
+## <section id = "Contributing">Contributing</section>
+Contributing to the Repo: Currently not taking contributions.
+
+## <section id = "Tests">Tests</section>
+Command to Run Tests: N/A
+
+## <section id = "Questions">Questions</section>
+If you have any questions, please feel free to contact me, Ryan, or Kenji: <br><br>
+1.) Github Usernames: Cgotts1, Ryan-M-Taylor, Kenjib32 <br>
+2.) Email Addresses: cobi.gottschalk@gmail.com, ryan.taylor1@yahoo.com, kenjibribon@gmail.com
