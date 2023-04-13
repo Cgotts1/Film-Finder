@@ -4,7 +4,7 @@
 N/A
 
 ## <section id = "Description">Description</section>
-This web application allows users to search for movie information and movie posters using the Open Movie Database (OMDB) and The Movie Database (TMDB) APIs. Simply type in the name of a movie in the search bar and the application will display movie information such as its title, release year, plot summary, rating, and poster image. This application is made using HTML, CSS, and Javascript. It also uses local storage for persistent data, so your recent movie searches will be saved and can be easily accessed in the future.
+This web application allows users to search for movie information and movie posters using the Open Movie Database (OMDB) and The Movie Database (TMDB) APIs. Simply type in the name of a movie in the search bar and the application will display movie information such as its title, release year, plot summary, rating, and poster image. This application was made using HTML, CSS, and Javascript. To retrieve the movie poster from the TMDB API, it utilizes local storage.
 
 Link to application: https://cgotts1.github.io/Film-Finder/ <br>
 <!-- ![Film Finder gif](/assets/images/Project.gif) <br> -->
